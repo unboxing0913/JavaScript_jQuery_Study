@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function makeCounter(){
+	var count=0;
+	//return f; 여기서 반환시켜도 이름이있는 함수(브라우저에서적용)이기 때문에 가능함
+	function f(){
+		return count++; /*함수안에 count변수가없기 때문에 자기 윗단계 로 올라가서찾는다*/
+	};	//내부함수인것을 한눈에 알수있게 세미콜론(;) 붙여주면 좋음
+	return f;//함수를 반환할때는 ()빼고 함수명으로 반환
+}
+
+var counter = makeCounter();
+console.log(counter());
+console.log(counter());
+console.log(counter());
+//f();
+
+////////////////////////////////////////////////////////////////
+function makeCounter2(){
+	var count2 = 0;
+	
+	return function(){
+		return count2++;
+	};
+}
+var counter2 = makeCounter2();
+console.log(counter2());
+console.log(counter2());
+console.log(counter2());
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

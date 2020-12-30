@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*JavaScript 로그인창에서는 철차,규칙 등을 확인시키고 서버에 넘기는방식*/
+window.onload=function(){
+	var sbmBtn=document.getElementById("sbmBtn");
+	sbmBtn.onclick=function(){
+		if(document.getElementById("uId").value==""){
+			alert("user pw blank!!");
+		}else if(document.getElementById("uPw").value==""){
+			alert("user pw black!!");
+		}else{
+			alert("login ok!!");
+			document.getElementById("loginFrom").submit();
+		}
+	};
+	
+	var resBtn=document.getElementById("resBtn");
+	resBtn.onclick=function(){
+		alert("reset ok!!");
+		document.getElementById("loginFrom").reset();
+	}
+}
+</script>
+
+</head>
+
+<body>
+
+
+</body>
+</html>

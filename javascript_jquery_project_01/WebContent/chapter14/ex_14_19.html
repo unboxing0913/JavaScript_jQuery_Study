@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+
+	window.onload=function() {
+		var str = "";
+		str += "<p id='jsTitle'>javaScript & node.js</p>";
+		str += "<img id ='logoImg', src='./img/logo.png'>";
+		/*조심 : 쉼표도 하나의 문자로 인식(쉼표가 없어도됨)*/
+		document.body.innerHTML = str;
+
+		var titleNode = document.getElementById("jsTitle");
+		titleNode.style.fontSize ="1.2em";
+		titleNode.style.border ="1px solid #ff0000";
+
+		var logoNode = document.getElementById("logoImg");
+		logoNode.style.width ="170px";
+		logoNode.style.height ="67px";
+	}
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

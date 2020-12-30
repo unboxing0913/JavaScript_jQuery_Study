@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 메뉴추가버튼  -->
+<script type="text/javascript" src="../jQuery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+//click,append
+	var i=1;
+$(document).ready(function(){
+	$("#bt").click(function(){   //jQuery에서는 onclick = click
+		$("#li").append("<li>newmenu"+i+"</li>"); //append :선택한 요소의 마지막에 요소나 컨텐츠 추가
+		i++;
+	
+	});	
+});
+
+/*
+ *  .append()메소드의 반대로 .prepend()메소드는 선택한 요소의 처음에 요소나 컨텐츠를 추가
+ */
+
+
+</script>
+</head>
+<body>
+<input type="button" id="bt" value="메뉴추가">
+	<ul id="ul">
+		<li id="li">menu</li>
+	</ul>
+</body>
+</html>

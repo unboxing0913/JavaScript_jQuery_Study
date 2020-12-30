@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ * String 객체 
+ */
+ 
+ var strEn="ABCDEFE";
+ var strKo=new String("가나다라마바사아나");
+ String.prototype.temp=123; //prototype 공유개념
+ 
+ console.log("strEn : "+strEn);
+ console.log("strKo : "+strKo);
+ 
+ console.log("strEn.length :"+strEn.length);
+ console.log("strKo.length :"+strKo.length);
+ 
+ console.log("strEn.constructor : "+strEn.constructor);
+ console.log("strKo.constructor : "+strKo.constructor);
+ 
+ console.log("strEn.temp : "+strEn.temp);
+ console.log("strKo.temp : "+strKo.temp);
+ 
+ console.log("strEn.temp : "+typeof(strEn.temp));
+ console.log("strKo.temp : "+typeof(strKo.temp));
+ 
+ console.log("strEn.charAt() : "+strEn.charAt(3)); // D   (문자 순서 배열식 인덱스0부터)
+ console.log("strEn.indexOf() : "+strEn.indexOf("E"));// 4
+ console.log("strEn.indexOf() : "+strEn.lastIndexOf("E")); //6 (뒤에서부터 찾음)
+ console.log("strEn.concat() : "+strEn.concat("abcdef")); // 뒤에추가
+ console.log("strEn.replace() : "+strEn.replace("A","a")); // 바꾸기
+ console.log("strEn.split() : "+strEn.split("C")); // (값) 을기준으로 갈라놓기
+ console.log("strEn.slice() : "+strEn.slice(2,4)); // CD : begin~end-1 까지 자르기 , 결과값 배열로리턴
+ console.log("strEn.substring() : "+strEn.substring(1,4)); //BCD begin~end-1 까지 자르기 ,결과값 객체로리턴
+ 
+ 
+ console.log("strKo.charAt() : "+strKo.charAt(3)); // 라   (문자 순서 배열식 인덱스0부터)
+ console.log("strKo.indexOf() : "+strKo.indexOf("나"));// 1
+ console.log("strKo.indexOf() : "+strKo.lastIndexOf("나")); //8 (뒤에서부터 찾음)
+ console.log("strKo.concat() : "+strKo.concat("abcdef"));
+ console.log("strKo.replace() : "+strKo.replace("a","A")); // 바꾸기
+ console.log("strKo.split() : "+strKo.split("라")); // (값) 을기준으로 갈라놓기 , 결과값 배열로리턴
+ console.log("strKo.slice() : "+strKo.slice(2,4)); // 다라: begin~end-1 까지 자르기, 결과값 객체로리턴
+ console.log("strKo.substring() : "+strKo.substring(1,4)); //나다라 
+ 
+ 
+ 
+ var lc=strEn.toLowerCase(); //소문자로
+ console.log("lc : "+lc); 
+ var up=lc.toUpperCase(); //대문자로
+ console.log("up : "+up)
+ 
+  var lc=strKo.toLowerCase(); //소문자로 (한글 변함없음)
+ console.log("lc : "+lc);  
+ var up=lc.toUpperCase(); //대문자로 (한글 변함없음)
+ console.log("up : "+up)
+ 
+ //console.log("typeof strEn  :"+typeof strEn); //string 타입
+ //console.log("typeof strKo  :"+typeof strKo); //object 타입
+ 
+ // console.log(typeof strKo.substring(1,4)); //String 리턴
+ // console.log(typeof strEn.substring(1,4)); //String 리턴
+ 
+ 
+ 
+ 
+ //////////////////////////////////////////////////////
+ 			//첫글자 대문자 => 생성자함수
+ function ObjName(){ 
+	 this.pro="property";
+	 this.met=function met(){
+		 return "abc";		 
+	 };
+ }
+ 
+ ObjName.prototype.temp=123; //ObjName만 쓸수잇는 prototype의 temp
+ var obj=new ObjName();
+ console.log("obj.constructor : "+obj.constructor); // obj.constructor => obj의 생성자값
+ console.log("obj.temp : "+obj.temp);
+ console.log("obj.met() : "+obj.met());
+
+ </script>
+</head>
+<body>
+
+</body>
+</html>

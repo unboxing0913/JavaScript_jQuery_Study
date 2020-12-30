@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\it\javaScript_jQuery_lecture\javaScript_jQuery_workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+144915537.index
+850469263.index
+3098025486.index
+4182885620.index
+38318689.index
+2836784010.index
+2288295632.index

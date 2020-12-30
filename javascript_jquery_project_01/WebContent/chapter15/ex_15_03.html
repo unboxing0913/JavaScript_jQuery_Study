@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+window.onload=function(){
+	function addHandler(){
+		console.log("click!");
+	}
+	
+	function removeHandler(){
+		console.log("event remove!!");
+		ceA.removeEventListener("click",addHandler,false); //발생한 메소드를 지운다
+	}
+	
+	var ceA=document.getElementById("cEventAdd");
+	ceA.addEventListener("click",addHandler,false); //false 이벤트효과를보는 방식
+	/*addEventListener() 지정한 이벤트가 대상에 전달될 때마다 호출할 함수를 설정 */
+	var ceR=document.getElementById("cEventRem");
+	ceR.addEventListener("click",removeHandler,false);
+
+}
+</script>
+
+<style type="text/css">
+
+#cEventAdd{
+	width:200px;
+	height:100px;
+	line-height:100px;
+	text-align: center;
+	font-size:1.2em;
+	background-color:#f00;
+	color:#fff;
+	font-weight:bolder;
+}
+
+#cEventRem{
+	width:200px;
+	height:100px;
+	line-height:100px;
+	text-align: center;
+	font-size:1.2em;
+	background-color:#0f0;
+	color:#fff;
+	font-weight:bolder;
+}
+
+</style>
+</head>
+<body>
+	<div id="cEventAdd">click event</div>
+	<div id="cEventRem">remove event</div>
+
+</body>
+</html>

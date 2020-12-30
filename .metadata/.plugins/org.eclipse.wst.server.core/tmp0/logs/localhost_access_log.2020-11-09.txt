@@ -1,0 +1,10 @@
+127.0.0.1 - - [09/Nov/2020:19:59:14 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [09/Nov/2020:20:00:02 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:00:02 +0900] "GET /javascript_jquery_project_01/chapter06/ex_06_03.html HTTP/1.1" 200 397
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:00:24 +0900] "GET /javascript_jquery_project_01/chapter06/ex_06_03.html HTTP/1.1" 200 397
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:00:24 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:00:32 +0900] "GET /javascript_jquery_project_01/chapter06/ex_06_02.html HTTP/1.1" 200 410
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:00:32 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:00:50 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:00:58 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [09/Nov/2020:20:01:06 +0900] "GET /javascript_jquery_project_01/chapter05/ex_05_01.html HTTP/1.1" 200 1175

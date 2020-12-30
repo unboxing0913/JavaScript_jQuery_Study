@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+//var firstFunctionVariable;
+
+/*var => 함수 안에서는 지역 , 함수 밖에서는 전역*/
+
+function first(){
+  /*var firstFunctionVariable="JavaScript with HTML";
+	함수 안쪽에서 var선언을 하게되면 지역변수 개념이 되버림   */
+ 
+	firstFunctionVariable="JavaScript with HTML";
+/*	안붙일 경우 전역변수 개념이 된다 */
+	
+/*	const firstFunctionVariable="JavaScript with HTML";
+	const => 상수(값을 고정시키기위해 사용)  	ES6 */ 
+	
+/*	let firstFunctionVariable="JavaScript with HTML";	 
+	let => 일반변수(중복선언안됨)			ES6 */
+ 
+/* 	let first=0;         ES6
+ 	let first=0;
+ 	console.log(first); */
+}
+
+function second(){
+/*	const firstFunctionVariable="JavaScript with HTML"; */
+	first();
+	console.log(firstFunctionVariable);
+}
+//console.log(firstFunctionVariable); 함수를 실행하기전에 변수 접근을하면 error
+second();
+
+
+
+
+/* ★자바스크립트 함수 개념*/
+ 
+var scope="global";//전역변수개념
+
+function func(){	
+	alert(scope); //javaScript에서는 underfined가 출력 (일반적인 언어는 global출력력)
+// 	var scope="local";	//★함수안의 var의 범위는 함수안의 전체범위★
+    scope="local";
+	alert(scope);
+}
+
+func();
+
+
+
+</script>
+</head>
+<body>
+<pre>
+ECMA(European Computer Manufacturers Association)
+ECMA Script5 ==> ES5(2009~2015) ==>ES6
+
+const , let은 ES6버전부터 나왔다. (var와 다르게 변수 재선언(중복선언)이 불가능하다)
+
+let은 java의 일반변수
+const java의 상수
+
+ES5:현재공부중인버전
+</pre>
+</body>
+</html>

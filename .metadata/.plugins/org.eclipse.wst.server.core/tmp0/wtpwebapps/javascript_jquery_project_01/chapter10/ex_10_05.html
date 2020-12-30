@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var objName={
+			name : "Lee sun sin",
+			nation : "Korea",
+			gender : "man",
+			character : "good"
+	};
+	
+	var print = "";
+	for(var key in objName){
+		print += key+" : "+objName[key]+"\n"
+	}
+	console.log(print);
+	
+	
+	objName.talent="fencing"; //속성 추가
+	print="";
+	for(var key in objName){
+		print+= key+" : "+objName[key]+"\n"
+	}
+	console.log(print);
+
+	
+	delete(objName.talent); //속성 삭제
+	print="";
+	for(var key in objName){
+		print+= key+" : "+objName[key]+"\n"
+	}
+	console.log(print);
+	
+	
+</script>
+</head>
+<body>
+<pre>
+함수.key값 : value값               ==>   속성 추가
+delete(함수.key값);        ==> 속성 삭제
+</pre>
+</body>
+</html>

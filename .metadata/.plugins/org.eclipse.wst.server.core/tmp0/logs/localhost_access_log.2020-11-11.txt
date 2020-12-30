@@ -1,0 +1,8 @@
+127.0.0.1 - - [11/Nov/2020:19:40:37 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [11/Nov/2020:19:41:04 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:19:41:05 +0900] "GET /javascript_jquery_project_01/closure/closure_06.html HTTP/1.1" 200 610
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:19:41:05 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:19:41:31 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:19:43:22 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:19:48:17 +0900] "GET /javascript_jquery_project_01/closure/closure_06.html HTTP/1.1" 200 610
+0:0:0:0:0:0:0:1 - - [11/Nov/2020:19:48:19 +0900] "GET /javascript_jquery_project_01/closure/closure_06.html HTTP/1.1" 304 -

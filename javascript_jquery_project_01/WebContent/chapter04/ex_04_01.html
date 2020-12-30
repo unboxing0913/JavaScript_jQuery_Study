@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*JavaScript는 var를 입력안해줘도 변수선언이 됨 */
+var varTemp1=100;
+var varTemp2=200;
+var varTemp3=varTemp1+varTemp2;
+console.log("varTemp3 : "+varTemp3);
+
+
+varTemp2=1000;
+varTemp3=varTemp1+varTemp2; 
+console.log("varTemp3 : "+varTemp3);
+
+
+
+/*연산식*/
+var varFirstNum=10;
+var varSecondNum=4;
+var varResult=0;
+
+varResult=varFirstNum+varSecondNum;
+console.log("varResult : "+varResult);
+
+varResult=varFirstNum-varSecondNum;
+console.log("varResult : "+varResult);
+
+varResult=varFirstNum*varSecondNum;
+console.log("varResult : "+varResult);
+
+varResult=varFirstNum/varSecondNum;
+console.log("varResult : "+varResult);
+
+varResult=varFirstNum%varSecondNum;
+console.log("varResult : "+varResult);
+
+
+/*증감식*/
+var varIncrease=10;
+var varDecrease=10;
+	
+varIncrease=++varIncrease;
+varDecrease=--varDecrease;
+
+console.log("varIncrease : "+varIncrease);
+console.log("varDecrease : "+varDecrease);
+
+varIncrease=varIncrease++;
+varDecrease=varDecrease--;
+/*	varIncrease++;
+  	varDecrease--;    보통 자기자신에게 적용하려면 이런식으로 적용해야함 
+*/
+
+console.log("varIncrease : "+varIncrease);
+console.log("varDecrease : "+varDecrease);
+
+
+/*조건식*/
+var varNum=10;
+console.log(varNum > 11);
+console.log(varNum < 11);
+console.log(varNum >= 11);
+console.log(varNum <= 11);
+console.log(varNum == 11);
+console.log(varNum != 11);
+
+var varLogic1=true;
+var varLogic2=false;
+console.log(varLogic1 && varLogic2);
+console.log(varLogic1 || varLogic2);
+
+varLogic1=true;
+varLogic2=true;
+console.log(varLogic1 && varLogic2);
+console.log(varLogic1 || varLogic2);
+
+varLogic1=false;
+varLogic2=false;
+console.log(varLogic1 && varLogic2);
+console.log(varLogic1 || varLogic2);
+
+
+var varComplex=100;
+varComplex +=3;
+console.log("varComplex : "+varComplex);
+varComplex -=3;
+console.log("varComplex : "+varComplex);
+varComplex /=3;
+console.log("varComplex : "+varComplex);
+varComplex *=3;
+console.log("varComplex : "+varComplex);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../jQuery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("h1").css("color","red");
+	$("#text").css("color","orange");
+	$("h1[name=text]").css("color","yellow");
+	$(".text").css("color","green");	
+});
+
+</script>
+</head>
+<body>
+	<h1>Test1</h1> <!-- red -->
+	<h1 id="text">Test2</h1> <!-- orange -->
+	<h1 name="text">Test3</h1> <!-- yellow -->
+	<h1 class="text">Test4</h1> <!-- green -->
+</body>
+</html>

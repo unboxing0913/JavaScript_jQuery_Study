@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var g="global";
+
+/* 설명  */
+// if문에있을때 실행이 되던안되던 var g라는 변수가만들어졌기때문에 
+// 함수안의 g값은 undefined로 출력된다.
+// ★if문의 조건과 상관없이 var g는 선언되어 진다.
+// ★var 변수의 범위는 함수전체 , let 변수의 범위는 블록 {  } ★
+function test(){
+	console.log(g);
+	if(false){  
+		var g="TEST";  //let으로 변수선언을 했을경우엔 if블록
+	}
+	console.log(g);
+}
+
+console.log(g);
+
+test();
+</script>
+</head>
+<body>
+
+</body>
+</html>

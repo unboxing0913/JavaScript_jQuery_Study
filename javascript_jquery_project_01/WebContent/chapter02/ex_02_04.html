@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+
+//문자열
+var str="가나다라마바사";/*문자열*/
+console.log("str : "+str);
+console.log("str : "+str+'ABCDEFG');/*문자열출력 작은따옴표 가능*/
+console.log("str : "+str+'\n\t\"ABCDEFG\"'); /*큰따옴표를 console창에 보이고싶을때*/
+
+//숫자             
+var num=123;
+console.log("num : "+num);
+num=123.456;
+console.log("num : "+num);
+
+console.log("num : "+num+100);/*연산안됨 (★변수와 숫자의 연산은 문자열로 처리됨)*/
+console.log("num : "+(num+100));/*연산됨*/
+
+//boolean
+var boo=true;
+console.log("boo : "+boo);
+console.log("boo : "+boo+1);
+console.log("boo : "+(boo+1)); /* true는 숫자로 1 */
+console.log("boo : "+(!boo));
+
+var boo=false; /*javaScript 동일변수 선언가능*/
+console.log("boo : "+boo);
+console.log("boo : "+boo+1);
+console.log("boo : "+(boo+1)); /* false은 숫자로 0 */
+console.log("boo : "+(!boo));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

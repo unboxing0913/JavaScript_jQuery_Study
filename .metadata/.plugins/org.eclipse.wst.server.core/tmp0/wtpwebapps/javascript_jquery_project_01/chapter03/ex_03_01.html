@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var variableName1;
+variableName1 = 100;
+alert("variableName1 : "+variableName1);
+
+var variableName2 = 200;
+variableName2 = 300;
+alert("variableName2 : "+variableName2);
+
+var varStr = "ABCDEF";
+console.log("varStr : "+varStr);
+
+var varBoo = false;
+console.log("varBoo : "+varBoo);
+
+var varFun = function(){	
+};
+console.log("varFun : "+ varFun);
+/* javaScript 변수에 함수도 저장가능
+ * javaScript 전부 객체*/
+
+ var varObj={};
+ console.log("varObj : "+varObj);
+ /*{}가 객체를 저장하는것을 나타냄*/
+ 
+ 
+ var varUnd=undefined;/*하나의 데이터값*/
+ console.log("varUnd : "+varUnd);
+ /* undefined : 선언만 하고 초기화하지 않은 것을 의미함 */
+ var varUndfined;
+ console.log("varUndefined : "+varUndfined);
+
+ 
+ 
+ /*      타입          */
+ var varTemp;
+ console.log("varTmp : "+varTemp); //undefined
+ console.log("varTmp Type : "+typeof(varTemp));//하나의타입으로 존재
+ 
+ var varTemp=123456;
+ console.log("varTmp : "+varTemp); 
+ console.log("varTmp Type : "+typeof(varTemp));//숫자는number타입
+ 
+ var varTemp=123456.123456; //.0 인 소수점은 출력X 
+ console.log("varTmp : "+varTemp); 
+ console.log("varTmp Type : "+typeof(varTemp)); //자료형구분X 정수,실수둘다 number타입
+ 
+ var varTemp=true;
+ console.log("varTmp : "+varTemp); 
+ console.log("varTmp Type : "+typeof(varTemp));//t/f는 boolean타입
+ 
+ var varTemp=function(){
+ };
+ console.log("varTmp : "+varTemp); 
+ console.log("varTmp Type : "+typeof(varTemp));//메소드는 메소드타입
+ 
+ var varTemp={};
+ console.log("varTmp : "+varTemp); 
+ console.log("varTmp Type : "+typeof(varTemp));//{} 객체타입
+ 
+ var varTemp=undefined;
+ console.log("varTmp : "+varTemp); 
+ console.log("varTmp Type : "+typeof(varTemp));//undefined 타입
+ 
+</script>
+</head>
+<body>
+
+</body>
+</html>

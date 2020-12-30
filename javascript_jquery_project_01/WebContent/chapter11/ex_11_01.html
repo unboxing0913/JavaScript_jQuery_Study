@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// 기본적인 객체 생성 방법 //////////////////////////////////
+var objBicycle={     /*  오브젝트 생성  => key값 : value값(프로퍼티)  */ 
+		hadle : "steel",
+		maxSpeed : "50km/h",
+		width : "200cm",
+		height : "100cm",
+		run : function(){
+			return "go!";
+		}
+};
+console.log("objBicycle.maxSpeed : "+objBicycle.maxSpeed);
+console.log("objBicycle.run: "+objBicycle.run());
+
+
+
+//함수를 이용한 객체 생성 방법//////////////////////////////////
+function createCar(name,color,speed){
+	var carObj={
+			//this.name : name  /error
+			name : name,
+			color : color,
+			speed : speed,
+			run : function(){
+				return this.speed+"km/h";
+			}
+	};
+	
+	return carObj;
+}
+
+var sorento=createCar("SORENTO","GREY",220);
+console.log("sorento.name : "+sorento.name);
+console.log("sorento.run : "+sorento.run());
+
+var soul=createCar("SOUL","WHITE",180);
+console.log("soul.name : "+soul.name);
+console.log("soul.run : "+soul.run());
+/* 객체를 반복적으로 생성할수있다 */
+
+
+
+
+//생성자를 이용한 객체 생성//////////////////////////////////////
+function Airplane(name,color,speed){ /*첫글자 대문자*/
+	 	this.name=name;         //대입관계일때 this를 붙여줘야함
+	 	this.color=color;
+	 	this.speed=speed;
+	 	this.fly=function(){
+	 		return this.speed+"fly!"
+	 	};
+}
+
+var boeing747=new Airplane("boein747","white/blue","600km/h");
+console.log("boeing747.name : "+boeing747.name);
+console.log("boeing747.color : "+boeing747.color);
+console.log("boeing747.speed : "+boeing747.speed);
+console.log("boeing747.fly : "+boeing747.fly());
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

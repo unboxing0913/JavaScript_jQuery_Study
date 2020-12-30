@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var objCar={
+		width : "3m",
+		height : "2m",
+		cc : "2000cc",
+		energy : 100,
+		speed : function(power){
+			//return energy*power; error
+			return this.energy*power;
+		}
+};
+
+console.log("objCar.speed : "+objCar.speed(2));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*  closure (클로저)
+ * 	반환된 함수의 life cycle가 종료될 때 까지 호출된 함수의  life cycle이 유지 되는것
+ */
+	function funName(x){
+		var varName=":: 요청한"+x+" 에 대한 구구단::";
+		/*var스코프를 지워 전역변수로만들어도 return되어 함수가 소멸하기때문에 접근할수없다 (1)*/
+		return function(){
+			console.log(varName);
+			for(var i=1;i<10;i++){
+				console.log(x+"*"+i+"="+(x*i));
+			}
+		}
+	}
+	
+	//console.log("varName : "+varName); error,not defined
+	/*varName은 funName()함수안에서 선언된 지역변수*/
+    //함수에 선언된 지역변수에 접근 할 수 없다.(1)
+	var returnFun=funName(5);
+    returnFun();
+    //console.log("varName : "+varName); 함수는 실행된후 error
+     
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

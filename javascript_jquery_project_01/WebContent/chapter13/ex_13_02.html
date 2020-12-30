@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ *  window객체
+ */
+ 
+ var newWindow=window.open("http://www.google.com","google","width=500,height=600","resizable=yes");
+ 
+  newWindow.moveTo(50,50); // moveTo(x좌표,y좌표) : 이동
+  for(var i=0;i<1000;i++){ /*현재위치에서 1000번만큼 1씩이동 */
+  	 newWindow.moveBy(1,1); // moveBy : 현재위치를 기준으로 창을이동
+  }
+  
+  newWindow.resizeTo(700,800);
+  for(var i=0;i<200;i++){ 
+	  newWindow.resizeBy(-1,-1);
+  }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jQuery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+/*큰따옴표와 작은따옴표를 섞어 쓸때는 안쪽 따옴표를 작은따음표로 해줘야함*/
+/* value ==> .val();  */
+$(document).ready(function(){
+	$("input[type='text']").css("color","#ff0000");  //속성 선택자
+	$("input[type='password']").css("color","#0000ff"); //속성 선택자
+	$("input:submit").css("fontSize","1.2em"); // 필터 선택자 : 선택된 요소중 필요한 요소만을 걸러내는 방법
+	var chk=$("input:checked").val(); // checked의 있는 값을 chk에 저장 
+	console.log("chk : "+chk);
+	$("li:nth-child(2n+1)").css("background","#ffff00"); // 함수 선택자
+	/* li태그중에 n번째 자식 (odd홀수 even짝수)*/
+});
+
+
+</script>
+</head>
+<body>
+	<form action="">
+		UserID : <input type="text"><br> 
+		UserPW : <input type="password"><br> 
+		Submit : <input type="submit" value="submit"><br> 
+		Reset : <input type="reset" value="reset"><br> 
+		Food<br> 
+		사과<input type="checkbox" id="apple" value="사과"> 
+		바나나<input type="checkbox" id="banana" value="바나나" checked> 
+		수박<input type="checkbox" id="watermelon" value="수박"><br>
+		<ul>
+			<li>이일자</li>
+			<li>이이자</li>
+			<li>이삼자</li>
+			<li>이사자</li>
+			<li>이오자</li>
+			<li>이육자</li>
+			<li>이칠자</li>
+		</ul>
+	</form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+127.0.0.1 - - [17/Nov/2020:21:05:43 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [17/Nov/2020:21:05:45 +0900] "GET /javascript_jquery_project_01/chapter16/ex_fish2.html HTTP/1.1" 200 1168
+0:0:0:0:0:0:0:1 - - [17/Nov/2020:21:05:45 +0900] "GET /javascript_jquery_project_01/chapter16/fish1.png HTTP/1.1" 200 4331
+0:0:0:0:0:0:0:1 - - [17/Nov/2020:21:05:45 +0900] "GET /javascript_jquery_project_01/jQuery/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+0:0:0:0:0:0:0:1 - - [17/Nov/2020:21:05:45 +0900] "GET /favicon.ico HTTP/1.1" 404 818

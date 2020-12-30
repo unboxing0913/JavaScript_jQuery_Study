@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function displayTime(){
+	var d=new Date();
+	console.log("현재 시각은"+d.toLocaleString()+"입니다.");
+}
+
+// 웹 브라우저가 문서를 모두 읽어 들인 후에 실행
+window.onload=function(){
+	var button=document.getElementById("button"); // id가 button인 요소를 가져와라
+	button.onclick=displayTime; // diplayTime() 메소드 괄호를 넣어주면 함수호출이 바로되기떄문
+}       //괄호가 없으면 주소값만 넣어줌
+</script>
+</head>
+<body>
+	<input type="button" value="click" id="button"> <!-- 태그포함하나의 전체내용 => 요소(Element) -->
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../../jQuery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+
+function addFile(){
+	var div = document.getElementById("div");	
+	var file = $("input[type=file]").first().clone(); //clone()복사		
+	$(div).append(file.val(""))//.append("<br>"); 가능
+	//div.innerHTML+="<br>";    += 재생성되기때문에 
+	$(div).append("<br>")
+}
+
+function delFile(){
+	if($("input").last().attr("type")=="file"){
+		$("[type=file]").last().remove();
+		$("br").last.remove();
+	}
+}
+</script>
+</head>
+<body>
+<div id="div">
+	<input type="file">
+	<input type="button" value="추가" onclick="addFile()">
+	<input type="button" value="삭제" onclick="delFile()">
+	<br>
+	</div>
+</body>
+</html>

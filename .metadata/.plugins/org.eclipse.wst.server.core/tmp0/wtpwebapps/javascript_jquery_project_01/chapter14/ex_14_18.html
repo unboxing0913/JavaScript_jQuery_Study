@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+window.onload=function(){
+	
+	var str="";
+	str += "<p id='jsTitle'>javaScript & node.js</p>";
+	str += "<img id='logoImg', src ='./img/logo.png'";
+	str += "width='170',height='67', tempData='logoImg'>";
+	
+	document.body.innerHTML=str; 
+	
+	var titleNode=document.getElementById("jsTitle");
+	titleNode.parentNode.removeChild(titleNode);// titleNode(p)태그의 부모인 body의 titleNode를지움
+	
+	var logoNode=document.getElementById("logoImg");  //로고생성
+	logoNode.parentNode.removeChild(logoNode); //로고삭제
+	//logoNode.parentNode.remove(logoNode); //이런식의 접근도 가능
+}
+</script>
+
+</body>
+</html>

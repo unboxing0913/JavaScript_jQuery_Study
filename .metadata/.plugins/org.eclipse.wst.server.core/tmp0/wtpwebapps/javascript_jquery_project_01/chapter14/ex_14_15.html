@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*HTML요소 이미지 넣는방법*/
+window.onload=function(){
+	/*
+	var imgNode=document.createElement("img"); //HTML 요소 생성
+	imgNode.src="./img/logo.png"; // 이미지링크 
+	imgNode.width="170";    // 속성값
+	imgNode.height="67";
+	document.body.appendChild(imgNode);
+	*/
+	
+	/*같은 결과 다른 방식*/
+	
+	var imgNode=document.createElement("img");
+	imgNode.setAttribute("src","./img/logo.png"); //Element.setAttribute () =>지정한 요소의 속성값을 설정
+	imgNode.setAttribute("width",170);
+	imgNode.setAttribute("height",67);
+	imgNode.setAttribute("tempData","logoImg"); //임시로 속성과 값을 넣어준것
+	                          //(속성이름,값)
+	document.body.appendChild(imgNode);
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

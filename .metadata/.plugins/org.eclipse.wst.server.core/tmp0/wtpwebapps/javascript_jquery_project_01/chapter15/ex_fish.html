@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*왼쪽에 값을줘서 움직이는 원리 */
+window.onload=function(){
+	
+	var fish=document.getElementById("fish");
+	var btnstart=document.getElementById("btnStart");
+	
+	var left=50;
+	var timerID=0;
+	
+	btnstart.addEventListener("click",function(){
+		timerID=setInterval(function(){
+				left++;
+				fish.style.left = left+"px";
+				if(left>=430){
+					clearInterval(timerID);
+					timerID=0;
+				}
+			},20)
+		},false)
+}
+</script>
+
+
+
+<style type="text/css">
+
+body{
+	font-size : 9pt;
+}
+#panel{
+	width : 600px;
+	height : 300px;
+	border : 1px solid #999;
+	position : relative; /*위치 상대적*/
+}
+#bar{
+	background-color: #F30;
+	position : absolute; /*위치 절대적*/
+	left : 50px; /*JavaScript 물고기 시작위치*/
+	top : 190px;
+	width : 500px;
+	height : 20px;
+}
+
+#fish{
+	position : absolute;
+	left: 50px; /*JavaScript 물고기 시작위치*/
+	top: 120px;
+	
+}
+
+#nav{
+text-align: center;
+width: 600px;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+	<div>
+		<div id="panel">
+			<div id="bar"></div>
+			<img src="fish1.png" id="fish">
+		</div>
+		<div id="nav">
+			<button id="btnStart">
+			클릭하면 물고기가 움직여요.
+			</button>
+		</div>
+	</div>
+</body>
+</html>

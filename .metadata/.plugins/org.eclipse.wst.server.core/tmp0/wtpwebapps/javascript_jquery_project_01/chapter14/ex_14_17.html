@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+/*script에서 HTML요소를 추가하고  ID를통해 수정하는 방법*/
+
+window.onload=function(){
+	
+	var str="";
+	str += "<p id='jsTitle'>javaScript & node.js</p>";
+	str += "<img id='logoImg',src='./img/logo.png',";
+	str += "width='170',height='67',tempData='logoImg'>";
+	
+
+	document.body.innerHTML=str; 
+	
+	var titleNode=document.getElementById("jsTitle");
+	titleNode.innerHTML="JS & node"
+	
+	var logoNode=document.getElementById("logoImg");
+	logoNode.setAttribute("src","./img/arm_mbed.png");
+	logoNode.setAttribute("width",297);
+	logoNode.setAttribute("height",124);
+	
+	
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

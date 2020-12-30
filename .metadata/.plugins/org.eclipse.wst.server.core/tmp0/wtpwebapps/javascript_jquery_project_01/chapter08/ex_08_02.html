@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function funName(x,y,z){ // 매개변수 
+	console.log("x : "+x);
+	console.log("y : "+y);
+	console.log("z : "+z);	
+	
+	var result=x*y+z;
+	
+	return result;
+}
+
+
+var varResult=0;
+//var varResult=1;
+//var varResult=2;
+console.log("varResult : "+varResult);
+
+varResult=funName(2,3,4); //인자값(넘기는값)   //주는쪽 받는쪽 매개변수 일치해야 정상적
+console.log("varResult : "+varResult);
+
+varResult=funName(2,3,4,5); // JavaScript의 함수는 매개변수 갯수가 초과하면 그이후의 값을 배제함
+console.log("varResult : "+varResult);
+
+varResult=funName(2,3); //매개변수 갯수가 부족할경우 undefined , undefined와 연산시 NaN(숫자가아니다)
+console.log("varResult : "+varResult);
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ *  Array 예제
+ */
+ 
+ var varArr1=new Array("카카오","홍길동","이순신","박문수","홍삼");
+ var varArr2=new Array("오이","상추","호박","시금치","콩나물");
+ var varArr3=new Array(12,64,4,56,45,27);
+ 
+ console.log("varArr1.length",varArr1.length);
+ console.log("varArr1.join()",varArr1.join());	//배열의 모든 요소를 연결해 하나의 문자열로 만듭니다.
+ console.log("varArr1.",varArr1); 
+ console.log("varArr1.reverse()",varArr1.reverse()); // 역순으로 출력(한번 출력하면 값이고정됨)
+ console.log("varArr1",varArr1);//원본영향받음
+ console.log("varrArr1.sort()",varArr1.sort());//가나다순 정렬 (한번출력하면 값이 고정됨)
+ console.log("varrArr1",varArr1);//원본영향받음
+ console.log("varrArr1.slice()",varArr1.slice(1,3)); // (1,3-1)자르기 
+ console.log("varrArr1",varArr1); //원본은 영향안받음
+ console.log("varrArr1.concat()",varArr1.concat(varArr2)); // 뒤에 추가로 붙이기
+ console.log("varArr2.reverse()",varArr2.reverse());
+ console.log("varArr2",varArr2);
+ console.log("varrArr2.sort()",varArr2.sort());
+ console.log("varArr2",varArr2);
+ 
+ 
+ /*함수 표현 방식*/
+ console.log("varArr3.sort()",varArr3.sort()); //숫자는 sort를 사용하면안됨
+ console.log("varArr3.sort(a-b)",varArr3.sort(function(a,b){
+	 return a-b;//(자리바꾸는)알고리즘    //좀더 명확히 찾아보기(이해)
+ }));
+ 
+ 
+ console.log("varArr3.reverse()",varArr3.reverse());
+ console.log("varArr3.sort(b-a)",varArr3.sort(function(a,b){
+	 return b-a;
+ }));
+</script>
+</head>
+<body>
+
+</body>
+</html>

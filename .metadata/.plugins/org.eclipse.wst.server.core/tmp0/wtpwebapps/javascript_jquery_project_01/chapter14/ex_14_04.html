@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+window.onload=function(){
+	var intervalid;
+	var num = 0.00;
+	document.getElementById("start").onclick=function(){
+		var number = document.getElementById("number");
+			intervalid=setInterval(function(){
+				num = num+0.01;
+				number.innerHTML = num.toFixed(2);
+			
+			},10);
+	   };
+	
+	
+	document.getElementById("stop").onclick=function(){
+		clearInterval(intervalid);
+	 };
+   
+		
+}
+
+</script>
+</head>
+<body>
+<p><output id="number">0.00</output></p>
+<input type="button" id="start" value="시작">
+<input type="button" id="stop" value="정지">
+</body>
+</html>

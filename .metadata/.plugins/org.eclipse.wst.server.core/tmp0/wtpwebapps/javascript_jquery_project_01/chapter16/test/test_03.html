@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../../jQuery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript">
+	/* .removeAttr() => 선택한 요소의 특정 속성을 제거 */
+	function click1(){
+		$("table *").removeAttr("style"); // 적용되었던 스타일 지우기
+		$("tr:eq(1)").css("color","yellow");	
+	}
+	function click2(){
+		$("table *").removeAttr("style");
+		$("tr:eq(2)").css("color","yellow");	
+	}
+	function click3(){
+		//$("td:eq(1)").css("color","yellow");
+		//$("td:eq(4)").css("color","yellow"); 	
+		$("table *").removeAttr("style");
+		$("tr:eq(1) td:eq(1),tr:eq(2) td:eq(1)").css("color","yellow");
+		//tr:eq(1)에 위치한 td:eq(1)값,tr:eq(2)에 위치한 td:eq(1)값
+	}
+	function click4(){
+		//$("td:eq(2)").css("color","yellow");
+		//$("td:eq(5)").css("color","yellow");
+		$("table *").removeAttr("style");
+		$("tr:eq(1) td:eq(2),tr:eq(2) td:eq(2)").css("color","yellow");
+	}
+	
+
+</script>
+</head>
+<body>
+<table border="1">
+		<tr>
+			<th>구분</th>
+			<th>A</th>
+			<th>B</th>
+		
+		</tr>
+	    <tr>
+			<td>가</td>
+			<td>10</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>나</td>
+			<td>20</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>계</td>
+			<td>30</td>
+			<td>30</td>
+		</tr>
+</table>
+<br>
+<input type="button" value="[가]색 변경" onclick="click1();">
+<input type="button" value="[나]색 변경" onclick="click2();">
+<input type="button" value="[A]색 변경" onclick="click3();">
+<input type="button" value="[B]색 변경" onclick="click4();">
+
+
+<!-- 필터링 함수 
+DOM 트리에서 선택한 요소를 필터링하기 위한 함수
+.first( ) ==> 선택한 요소 중에서 첫 번째 요소를 선택
+.last( ) ==> 선택한 요소 중에서 마지막 요소를 선택
+.eq( ) ==> 선택한 요소 중에서 전달받은 인덱스에 해당하는 요소를 선택 
+-->
+
+</body>
+</html>

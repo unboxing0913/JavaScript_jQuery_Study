@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload=function(){ //html 값을 읽기위해 
+	document.getElementById("button").onclick=function(){
+	var h = document.getElementById("height").value/100; //값을가져올땐 .value
+	var w = document.getElementById("weight").value;
+	var bmi = document.getElementById("bmi");
+	bmi.innerHTML=(w/h/h).toFixed(2);     //.innerHTML => 값이 bmi 의 ?에 들어감
+	}; 	
+}
+
+</script>
+</head>
+<body>
+<p>키 : <input type="number" id="height">cm</p> <!-- number의 타입은 숫자 -->
+<p>몸무게 : <input type="number" id="weight">kg</p>
+<p>
+	당신의 체질량 지수는
+	<output id="bmi">?</output>
+	입니다.
+</p>
+<input type="button" id="button" value="계산">
+</body>
+</html>

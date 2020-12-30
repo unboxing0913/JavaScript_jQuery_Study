@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var varResult=0;
+for(var i=1;i<10;i++){
+	if(i%2==0 || i%3==0){
+		continue; //다시 반복문으로 
+	}
+	console.log("i : "+i);
+	varResult+=i;
+}
+console.log("varResult : "+varResult);
+
+
+
+
+var varNum=0;
+var varSum=0;
+while(varNum<10){
+	console.log("varNum : "+varNum);
+	varSum+=varNum;
+	varNum++;
+	
+	if(varSum>20){
+		console.log("varSum : "+varSum);
+		break;
+	}
+}
+
+
+
+for(var i=0;true;i++){
+	console.log("i : "+i);
+	if(i>50){
+		break;
+	}
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

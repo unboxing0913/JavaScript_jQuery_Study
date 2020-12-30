@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+function Person(name,age){
+	var _name=name;
+	var _age=age;
+	
+	return { //자바의 getter setter 개념
+		getName : function(){ 
+			return _name;
+		}, /*여러개를 하기위에 , 찍어줌*/
+		getAge : function(){
+			return _age;
+		},		
+		setAge : function(x){ //저장(변경)
+			_age = x;
+		}
+	};
+}
+
+var person=Person("Tom",18); // person에 Person("Tom",18) 의 return 값을 넣어줌
+console.log(person.getName()); //java방식 . 접근
+console.log(person.getAge());
+person.setAge(19); //java방식 .접근 => 값 setter에 넘겨줌
+console.log(person.getAge());
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

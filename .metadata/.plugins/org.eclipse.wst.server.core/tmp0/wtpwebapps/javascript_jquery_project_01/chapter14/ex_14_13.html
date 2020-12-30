@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<input type="checkbox" name="dog" value="pome">포메라니안<br>
+		<input type="checkbox" name="dog" value="dalma">달마시안<br>
+		<input type="checkbox" name="dog" value="bool">불독<br>		
+	</form>
+	<script type="text/javascript">
+		var dogs=document.getElementsByName("dog");
+		dogs[1].value="corgi"; //value값을 dalma => corgi로변경
+		dogs[1].nextSibling.nodeValue="웰시 코기"; // 달마시안 ==> 웰시코기로 변경
+		 /*newSibling : 형제  (input태그도 하나의 노드로 보기때문에 dogs[1]의 인풋태그다음인 달마시안노드가 변경))*/
+		for(var i=0;i<dogs.length;i++){
+			console.log(i+"번째 의값 :"+dogs[i].value+",이름 : "+dogs[i].nextSibling.textContent);
+		}
+		var dog2=dogs[0].nextSibling.textContent;
+		console.log("dog2 : "+dog2)
+		var dog2=dogs[1].nextSibling.textContent;
+		console.log("dog2 : "+dog2)
+		var dog2=dogs[2].nextSibling.textContent;
+		console.log("dog2 : "+dog2)
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	alert("내장 함수 : 기본적으로 제공하는 함수 ");
+	console.log("내장함수 : 기본적으로 제공하는 함수");
+/*	
+	setTimeout(function (){ //시간차 실행
+		alert("3초 후 한번 실행됩니다.");
+	},3000) //3초 = 3000
+	
+    var intervalid=setInterval(function(){ //시간차 반복실행
+		console.log("2초마다 계속 실행됩니다.");
+	},2000)
+	
+    clearInterval(intervalid);	 //setInterval 삭제기능
+	
+*/
+
+	setTimeout(function(){
+		console.log("종료!");
+		clearInterval(printIntervalId); // 7초뒤 printIntervalId 종료(삭제)
+	},7000);
+    
+
+	var printIntervalId=setInterval(function(){
+		console.log("*");
+	},2000);
+	
+	
+	
+</script>
+</head>
+<body>
+<pre>
+alert(내용) : 팝업창 내용출력
+console.log(내용) : 콘솔창 내용출력
+setTimeout(함수,초) : 시간차 실행
+setInterval(함수,초) : 시간차 반복실행
+clearInterval(함수) : setInterval 삭제기능
+setTimeout(함수,초)
+</pre>
+</body>
+</html>

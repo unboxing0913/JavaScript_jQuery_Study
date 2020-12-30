@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ *  screen객체
+ */
+ 
+ 
+ /*창 가운데 맞추기 */
+ function openWin(url,width,height){
+	console.log("screen.width : "+screen.width); //모니터 폭(가로)
+	console.log("screen.height : "+screen.height); //모니터 높이(세로)
+	var left = screen.width/2 - width/2;
+	var top = screen.height/2 - height/2;
+	var opt="width="+width+",height="+height+",left="+left+",top="+top;
+	
+	open(url,"newWin",opt);
+};
+
+openWin("http://google.com",800,500);
+</script>
+</head>
+<body>
+
+</body>
+</html>

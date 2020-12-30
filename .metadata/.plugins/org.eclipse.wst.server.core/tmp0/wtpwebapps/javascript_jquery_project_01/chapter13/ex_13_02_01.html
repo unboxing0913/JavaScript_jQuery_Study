@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var win;
+	function openwindow(){
+		win=window.open("","","width=100,height=100","resizable=yes");
+		win.focus();
+	}
+	
+	function myFunction(){
+		win.resizeTo(300,300);
+		win.focus();
+	}
+	
+	function myFunction2(){
+		win.resizeBy(10,10);
+		win.focus();
+	}
+  
+	/*
+	 *  resizeTo : 해당 크기로 확장
+	 *  resizeBy : 해당 크기만큼 확장또는 감소
+	 */
+	
+	
+</script>
+</head>
+<body>
+	<button onclick="openwindow()">open window</button> <!-- 버튼과 함수 연결 -->
+	<button onclick="myFunction()">ResizeTo</button>
+	<button onclick="myFunction2()">ResizeBy</button>
+</body>
+</html>

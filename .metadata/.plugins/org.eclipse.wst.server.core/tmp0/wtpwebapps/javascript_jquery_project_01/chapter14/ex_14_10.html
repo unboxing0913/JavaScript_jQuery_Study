@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="cards">
+		&hearts;하트는 <em>심장,마음</em>이라는 뜻입니다.
+	</p>
+	
+	<script type="text/javascript">
+	var para=document.getElementById("cards");
+	para.innerHTML="&diams; 다이아는 <strong>???</strong>이라는 뜻입니다.";
+	 //textContent와 innerHTML 차이점
+	console.log(para.textContent);
+	console.log(para.innerHTML); 
+	</script>
+</body>
+</html>

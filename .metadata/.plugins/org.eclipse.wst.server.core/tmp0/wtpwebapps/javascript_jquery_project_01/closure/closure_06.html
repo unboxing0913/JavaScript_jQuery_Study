@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){ /*window.onload만들어진 모든코드를 읽었으면 function()을 실행해라*/
+		var elm = document.getElementsByTagName("input");/*input이라는 태그를가진걸 가져와라*/
+		    //let i
+		for(var i=0;i<elm.length;i++){ /*elm.length : 3*/
+			elm[i].onclick=function(){
+				console.log(i);
+			};	
+			console.log("i :"+i);
+		}
+		console.log("i :"+i); //var였을경우 3이 찍힌다. let일경우 값이없음
+	}
+</script>
+</head>
+<body>
+<input type="button" value="0">
+<input type="button" value="1">
+<input type="button" value="2">
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+body{
+	font-size : 9pt;
+}
+#panel{
+	width : 600px;
+	height : 300px;
+	border : 1px solid #999;
+	position : relative; 
+}
+#bar{
+	background-color: #F30;
+	position : absolute; 
+	left : 50px; 
+	top : 190px;
+	width : 500px;
+	height : 20px;
+}
+
+#fish{
+	position : absolute;
+	left: 50px; 
+	top: 120px;
+	
+}
+
+#nav{
+text-align: center;
+width: 600px;
+}
+
+/*
+  jQuery를 사용하기위한 스크립트 호출
+  javaScript를 사용하기위한  스크립트 호출
+  jQuery 사용 설명 (예제 fish)
+  
+*/
+</style>
+<script type="text/javascript" src="../jQuery/jquery-3.5.1.min.js"></script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+	var $fish=$("#fish");
+	$("#btnStart").click(function(){
+		$fish.animate({
+			left:430//;붙이면 실행 안됨
+		},5000);
+	})
+})
+</script>
+
+</head>
+<body>
+	<div>
+		<div id="panel">
+			<div id="bar"></div>
+			<img src="fish1.png" id="fish">
+		</div>
+		<div id="nav">
+			<button id="btnStart">클릭하면 물고기가 움직여요.</button>
+		</div>
+	</div>
+
+</body>
+</html>

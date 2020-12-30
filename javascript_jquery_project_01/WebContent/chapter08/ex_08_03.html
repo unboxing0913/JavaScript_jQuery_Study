@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var varArr;
+
+function funName(){
+	console.log("arguments length : "+arguments.length);
+	return arguments;/*함수는 arguments(객체)를 기본적으로 가지고있음 */
+}
+
+
+
+console.log("---------------------------------");
+
+
+varArr=funName(1,2,3,4,5,6,7);
+console.log("varArr : "+varArr); 
+console.log("varArr.length : "+varArr.length);// 7
+
+for(var i in varArr){
+	console.log("varArr["+i+"] :"+varArr[i]); //arguments 배열은 아니지만 배열식으로 사용
+}
+
+
+
+console.log("---------------------------------");
+
+
+varArr=funName("A","B","C","D");
+console.log("varArr : "+varArr); 
+console.log("varArr.length : "+varArr.length);//4
+
+for(var i in varArr){
+	console.log("varArr["+i+"] :"+varArr[i]); 
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

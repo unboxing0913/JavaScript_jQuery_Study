@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+// indexOf() : 찾기
+var varArrIndex=new Array(123,"ABC","abc","가나다","123");
+console.log("varArrIndex.indexof(\"가나다\") : "+varArrIndex.indexOf("가나다"));
+console.log("varArrIndex.lastIndexOf(\"가나다\") :"+varArrIndex.lastIndexOf("가나다"));
+console.log("varArrIndex.indexOf(123) : "+varArrIndex.indexOf(123));
+console.log("varArrIndex.lastindexOf(123) : "+varArrIndex.lastIndexOf(123));
+console.log("varArrIndex.indexOf(\"XYZ\") : "+varArrIndex.indexOf("XYZ"));
+/*찾는데이터가 없으면 -1값을 반환함*/
+                                          
+// concat() : 연결
+var varArrFir=new Array("ABC","DEF","GHI","JKL");
+var varArrSec=new Array("가나다","라마바","사아자","차카타");
+var varArrRes=varArrFir.concat(varArrSec);
+console.log("varArrFir : "+varArrFir);
+console.log("varArrSec : "+varArrSec);
+console.log("varArrRes : "+varArrRes);
+console.log("varArrRes[4] : "+varArrRes[4]);
+
+// join(): 결합(객체사이의 연결문자)
+var varArrJoin=new Array("AB","CD","EF","HI");
+console.log("varArrJoin.join() : "+varArrJoin.join());
+console.log("varArrJoin.join(|) : "+varArrJoin.join("|"));
+console.log("varArrJoin.join(:) : "+varArrJoin.join(":"));
+console.log("varArrtoString.toString() : "+varArrJoin.toString());
+
+// sort(): 정렬
+var varArrSort=new Array("E","B","A","C","D");
+console.log("varArrSortBefore : "+varArrSort);
+console.log("varArrSort.sort() : "+varArrSort.sort());
+console.log("varArrSortAfter : "+varArrSort);
+/*★ sort()메소드를 호출하여 정렬시키면 그 배열은 유지됨(원본 보존안됨)*/   
+
+// reverse(): 반대
+var varArrReverse = new Array("E","B","A","C","D");
+console.log("varArrRevers : "+varArrReverse);
+console.log("varArrRevers.reverse() : "+varArrReverse.reverse());
+console.log("varArrReversAfter : "+varArrReverse);
+/*★ reverse()메소드를 호출하여 반대시키면 그 배열은 유지됨(원본 보존안됨)*/   
+
+// push() : 배열의 맨 끝에 값을 추가한다.
+var varArrPush=new Array("ABC","DEF");
+console.log("varArrPush.push(\"가나다\",\"마바사\") : "+varArrPush.push("가나다","마바사"));
+console.log("varArrPush : "+varArrPush);
+console.log("varArrPush.length : "+varArrPush.length);
+
+// pop() : 배열의 맨 끝에 값을 제거한다.
+var varArrPop=new Array("ABC","DEF");
+console.log("varArrPop.pop() : "+varArrPop.pop());
+console.log("varArrPop : "+varArrPop);
+console.log("varArrPop.length : "+varArrPop.length);
+
+// unshift() : 배열의 맨 앞에 값을 추가한다.
+var varArrUnshift=new Array("ABC","DEF");
+console.log("varArrUnshift.unshift(\"가나다\",\"마바사\") : "+varArrUnshift.unshift("가나다","마바사"));
+console.log("varArrUnshift : "+varArrUnshift);
+console.log("varArrUnshift.length : "+varArrUnshift.length);
+
+// shift() : 배열의 맨 앞에 값을 제거한다.
+var varArrShift=new Array("ABC","DEF");
+console.log("varArrShift.shift() : "+varArrShift.shift());
+console.log("varArrShift : "+varArrShift);
+console.log("varArrShift.length : "+varArrShift.length);
+
+
+//부록
+varArrShift[varArrShift.length]="DEF";
+         /* varArrShift.length = 1 , 1의 위치에 "DEF"를 추가하겠다*/
+varArrShift[2]="DEF";
+         /* 인덱스로 직접 값을 넣어줘도 추가가 됨 */
+varArrShift.push("DEF");
+         /* push로 추가한 방식 */
+console.log("varArrShift : "+varArrShift)
+
+
+
+</script>
+</head>
+<body>
+<pre>
+indexOf() : 찾기
+concat() : 연결
+join(): 결합(객체사이의 연결문자)
+sort(): 정렬
+reverse(): 반대
+push(): 배열의 맨 끝에 값을 추가한다.
+pop(): 베열의 맨 끝에 값을 제거한다.
+unshift(): 배열의 맨 앞에 값을 추가한다.
+shift(): 배열의 맨 앞에 값을 제거한다.
+</pre>
+</body>
+</html>

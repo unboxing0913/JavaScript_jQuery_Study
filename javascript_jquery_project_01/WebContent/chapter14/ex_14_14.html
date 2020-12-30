@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload=function(){
+	var elementNode=document.createElement("p"); // ("p")라는 태그(Node)를 하나만든다. (HTML요소를 만듬)
+	var textNo=document.createTextNode("javaScript & node.js"); // ("문자열") 태그(Node)를 하나만든다.
+	
+	//만든 p태그안에 만든 문자열을 넣는 방법 //appenChild() : 한 노드를 특정 부모 노드의 자식 노드 리스트 중 마지막 자식으로 붙임
+	elementNode.appendChild(textNo); //elementNode의 자식으로 textNo를 넣어줌
+	document.body.appendChild(elementNode); // elementNod가 body태그의 자식으로 들어감
+}
+</script>
+</head>
+<body>
+
+
+</body>
+</html>

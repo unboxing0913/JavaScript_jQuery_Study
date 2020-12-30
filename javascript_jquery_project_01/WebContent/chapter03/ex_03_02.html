@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+   JavaScript 자료형에는 숫자,문자,불리언,함수,객체,undefined가 있다.
+*/
+
+var varNum=123;
+console.log("varNum : "+varNum);
+
+var varStr='ABC';
+console.log("varStr : "+varStr);
+
+var varBoo=true;
+console.log("varBoo : "+varBoo);
+
+var varFun=function(){	
+};
+console.log("varFun : "+varFun);
+
+var varObj={};
+console.log("varObj : "+varObj);
+
+var varUnd=undefined;
+console.log("varUnd : "+varUnd);
+
+/*
+ *  JavaScript는 다른 프로그램언어에 비해서 자료형에 대한 제약이 약하다.
+ */
+ 
+
+ 
+ 
+ var varTemp="123";  /*String*/
+ console.log("varTemp type : "+typeof(varTemp));
+ 
+ varTemp=123;  /*number*/
+ console.log("varTemp type : "+typeof(varTemp));
+ 
+ 
+ 
+ 
+ /* 	자료형 변환	 */
+ var varType="123";
+ console.log("varType type : "+typeof(varType));
+ console.log("varType : "+(varType+1000));/*값은 1231000*/
+ 						/*String+number = String타입 연산*/
+ 						
+ varType=Number(varType); /*Number클래스를 이용한 타입변환*/
+ console.log("varType type : "+typeof(varType));
+ console.log("varType : "+(varType+1000)); /*값은 1123 */
+ 						/*number+number = number타입 연산*/
+ 
+ var varType=123;
+ varType=String(123); /*String클래스를 이용한 타입변환*/
+ console.log("varType type : "+typeof(varType));/*값은 1231000*/
+ console.log("varType : "+(varType+1000));
+ 						/*String+number = String타입 연산*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

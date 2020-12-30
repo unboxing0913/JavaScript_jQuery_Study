@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p>
+	<strong class="important">Document Object Model</strong>
+	<strong class="important">Document Object Model</strong>
+	<strong class="important">Document Object Model</strong>
+	의 줄임말 입니다.
+</p>
+<p>
+	<strong class="important">Document Object Model</strong>
+	<strong class="important">Document Object Model</strong>
+	<strong class="important">Document Object Model</strong>
+	의 줄임말 입니다.
+</p>
+	<script type="text/javascript">
+	
+	var paras=document.getElementsByTagName("p");	
+	//var firstParaImportants=document.getElementsByClassName("important");
+	var firstParaImportants=paras[0].getElementsByClassName("important");
+		/*p배열의[0],[1]중 [0]의 class important이기때문에 3개만 출력]*/
+	console.log(paras);
+	console.log(firstParaImportants);
+	
+	</script>
+</body>
+</html>

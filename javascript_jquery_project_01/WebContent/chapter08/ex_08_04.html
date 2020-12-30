@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	fun1(); /*어디서든 호출해도 상관이없음 (이미 브라우저에서 체크 했기때문에)*/
+	
+/*	fun2(); /*익명함수는 위치가중요함 번역을 한후 호출가능*/
+ 			/*익명함수는 브라우저에서 먼저 체크하지않는다.*/
+	
+	function fun1(){ 
+		console.log("fun1 run!");
+	} 
+	
+	var fun2=function(){
+		console.log("fun2 run!");
+	}
+	
+	fun2(); /*익명함수는 위치중요*/
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

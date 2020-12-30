@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ * Date 객체
+ */
+ 
+ var objDate1=new Date(); //대한민국표준시
+ //console.log(objDate1); 
+ var objDate2=new Date(2020,0,13); // 1월 : 0월  (ex)11월을 사용하려면 10 을 입력
+ //console.log(objDate2);
+ var objDate3=new Date(2010,10,10,10,10,10,10); // 연,월,일,시간,분,초,천분의일초
+ //console.log(objDate3);
+ 
+ console.log("objDate1.getYear: "+objDate1.getYear()); //120 (2020-120=1900)
+ console.log("objDate1.getYear: "+(objDate1.getYear()+1900));
+ 
+ 
+ console.log("objDate1.getFullYear : "+objDate1.getFullYear()); // 연도
+ console.log("objDate1.getMonth : "+objDate1.getMonth()); // 월-1
+ console.log("objDate1.getDate : "+objDate1.getDate()); //일
+ console.log("objDate1.getDay : "+objDate1.getDay()); // 요일(기준:일요일=0)
+ console.log("objDate1.getHours : "+objDate1.getHours()); //시간
+ console.log("objDate1.getMinutes : "+objDate1.getMinutes()); //분
+ console.log("objDate1.getSeconds : "+objDate1.getSeconds()); //초
+ 
+ console.log("objDate1.getTime : "+objDate1.getTime());//(지금까지 흐른시간)1970.1.1.0.0.0 기준
+ 
+ console.log("objDate1.toLocaleString : "+objDate1.toLocaleString());//연 월 일 시간
+ console.log("objDate1.toGMTString : "+objDate1.toGMTString());
+ 
+ function getNowDate(){
+	 var nowDate=new Date();
+	 var dayArr=new Array('일','월','화','수','목','금','토'); // 배열에 관련된일을하는 객체
+ 	 var print="";
+	 print+=nowDate.getFullYear()+"년";
+	 print+=(nowDate.getMonth()+1)+"월"; //
+	 print+=nowDate.getDate()+"일";
+	 print+=dayArr[nowDate.getDay()]+"요일";
+	 print+=nowDate.getHours()+"시";
+	 print+=nowDate.getMinutes()+"분";
+	 print+=nowDate.getSeconds()+"초";
+	 
+	 return print;
+ }
+
+ 	
+	
+/*	
+	var intervalid=setInterval(function(){
+		var date = getNowDate();
+		 console.log("date:time:"+date);//date값으로 대입시 안에 넣어줘야 유동적인 값이됨
+		 	},1000)
+	
+	setTimeout(function(){
+		clearInterval(intervalid)
+		console.log("종료");
+	},5500);
+		
+*/
+
+var date=getNowDate();
+console.log("date:time :"+date);
+
+var nowtervalId=setInterval(function(){
+	console.log(getNowDate());
+},1000);
+
+var nowTimeout=setTimeout(function(){
+	clearInterval(nowtervalId);
+	console.log("종료!");
+},5000);
+	
+
+</script>
+
+</head>
+<body>
+<pre>
+함수 가로까먹지말기 .함수()   // 함수를 var로받고 var출력할땐 ()안씀  
+</pre>
+</body>
+</html>

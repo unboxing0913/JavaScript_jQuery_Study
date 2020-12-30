@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var a = "A";
+
+function f(){
+	var b="B";
+	function g(){
+		var c="C";
+		console.log(a+b+c); //해당하는 변수를 찾기위해 역순으로 찾아올라간다
+	}
+	g(); //콘솔값을 출력하려면   f()함수 안에서 g()함수를 호출해줘야한다
+}
+
+f();
+//g(); //error
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

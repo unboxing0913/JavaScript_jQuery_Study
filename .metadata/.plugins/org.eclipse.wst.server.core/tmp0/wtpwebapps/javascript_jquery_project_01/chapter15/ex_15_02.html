@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+window.onload=function(){
+	/*
+	//HTML을 script에 불러와서 함수로 만드는 형식
+	var ce=document.getElementById("cEvent");
+	ce.onclick=function(){
+		console.log("click!");
+	}
+	*/
+	var ce=document.getElementById("cEvent");
+	ce.onclick=clickEventHandler2020;
+	function clickEventHandler2020(){
+		console.log("clickEventHandler!");
+	}
+}	
+</script>
+
+<style type="text/css">
+#cEvent{
+	width:200px;
+	height:100px;
+	text-align: center;
+	background-color:#f00;
+	color:#fff;
+	font-weight:bolder;
+}
+</style>
+
+</head>
+<body>
+	<div id="cEvent">click event</div>
+</body>
+</html>
